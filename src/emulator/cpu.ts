@@ -66,13 +66,17 @@ export class CPU {
     this.s[0] = EMU.ES_INIT; // ES
     this.s[1] = EMU.CS_INIT; // CS
     this.s[2] = EMU.SS_INIT; // SS
-    this.s[3] = EMU.DATA_SEG_VALUE; // DS (= @DATA, like the emu8086 default)
+    this.s[3] = EMU.DS_INIT; // DOS starts with DS unrelated to the program's data segment
     this.r[4] = program.stackSize; // SP
     this.F = 0x0002;
     this.ip = program.entryIndex;
     this.halted = false;
     this.cycles = 0;
-    this.mem.fill(0);
+    // Keep uninitialized memory deterministic while still exposing invalid
+    // segment setup as garbage, rather than silently returning empty strings.
+    for (let i = 0; i < this.mem.length; i++) {
+      this.mem[i] = (i * 73 + 41) & 0xff;
+    }
     this.writes = [];
     this.lineReady = false;
     this.undoLog = [];

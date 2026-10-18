@@ -42,20 +42,6 @@ MAIN PROC
     INT 21h
     LEA DX, line06
     INT 21h
-    LEA DX, line07
-    INT 21h
-    LEA DX, line08
-    INT 21h
-    LEA DX, line09
-    INT 21h
-    LEA DX, line10
-    INT 21h
-    LEA DX, line11
-    INT 21h
-    LEA DX, line12
-    INT 21h
-    LEA DX, line13
-    INT 21h
 
     MOV AH, 00h
     INT 16h

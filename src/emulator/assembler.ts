@@ -673,5 +673,6 @@ export const EMU = {
   CS_INIT: 0x0700,
   SS_INIT: 0x0900,
   ES_INIT: 0x0800,
+  DS_INIT: 0x0000,
   IP_INIT: CODE_BASE,
 };

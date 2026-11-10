@@ -2,6 +2,7 @@
 
 ![Download Counter](https://img.shields.io/github/downloads/arijit4/asm8086/total?logo=github&style=for-the-badge&color=blue)
 ![Build Passes](https://img.shields.io/badge/build-passing-brightgreen?logo=github&style=for-the-badge)
+[![As seen on Open Source Alternatives](https://www.opensourcealternatives.to/badge-osa.svg)](https://www.opensourcealternatives.to)
 
 -------
 
@@ -18,19 +19,18 @@ assembly language programs for the Intel 8086 microprocessor.
 
 Features supported out-of-the-box:
 
-| Feature                                 | asm8086 | emu8086 |
-|-----------------------------------------|---------|---------|
-| Integrated memory and CPU visualization | ✅       | ✅       |
-| Complex assembly code simulation        | ✅       | ✅       |
-| Variable emulation speed                | ✅       | ✅       |
-| Working with local files                | ✅       | ✅       |
-| Run without saving to disk              | ✅       | ❌       |
-| `STEP FORWORD`, `PAUSE`, `RESUME`       | ✅       | ✅       |
-| `STEP BACK`                             | ✅       | ❌       |
-| Syntax highlighting                     | ✅       | ⚠️      |
-| VIM keybindings                         | ✅       | ❌       |
-| Dark theme                              | ✅       | ❌       |
-| Built-in examples to learn from         | ✅       | ❌       |
-| Code autoformatting `Ctrl + Alt + f`    | ✅       | ❌       |
-| Meaningful error messages               | ✅       | ❌       |
-| Code auto-completion                    | ✅       | ❌       |
+| Feature                                        | asm8086 | emu8086 |
+|------------------------------------------------|---------|---------|
+| Integrated memory and CPU visualization        | ✅      | ✅      |
+| Complex assembly code simulation               | ✅      | ✅      |
+| Variable emulation speed                       | ✅      | ⚠️      |
+| Working with local files                       | ✅      | ✅      |
+| Run without saving to disk                     | ✅      | ❌      |
+| `STEP FORWORD`, `STEP BACK`, `PAUSE`, `RESUME` | ✅      | ✅      |
+| Syntax highlighting                            | ✅      | ⚠️      |
+| VIM keybindings                                | ✅      | ❌      |
+| Dark theme                                     | ✅      | ❌      |
+| Built-in examples to learn from                | ✅      | ❌      |
+| Code autoformatting `Ctrl + Alt + f`           | ✅      | ❌      |
+| Meaningful error messages                      | ✅      | ❌      |
+| Code auto-completion                           | ✅      | ❌      |
